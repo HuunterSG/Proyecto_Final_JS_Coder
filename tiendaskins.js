@@ -173,8 +173,8 @@ function tablaProduct(array) {
                 <th >${skin.descripcion}</th>
                 <th >Cantidad: ${skin.cantidad}</th>
                 <th >Valor: ${skin.precio}RP</th>
+                <br>
                 <th ><button id="eliminar${skin.id}" class="btn">Eliminar</button></th>
-                
             </tr>
         `;
     bodyT.appendChild(datos);
