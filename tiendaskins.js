@@ -13,6 +13,8 @@ logro hacerlo mediante vanilla y en el after me quedo mas
 claro utilizando esta forma
 */
 
+//Tengo problemas para darle estilos a las tablas esa es la razon por el cual tengo la pagina tan simple
+
 //creamos clase constructora con los metodos a utilizar
 class Skin {
     constructor(skin, cantidad) {
