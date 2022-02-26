@@ -168,14 +168,15 @@ function tablaProduct(array) {
 
     let bodyT = document.getElementById("bodyT");
     for(let skin of array) {
-        let datos= document.createElement("div");
+        let datos= document.createElement("tr");
+        /*DAR CLASE Y ESTILOS EN CSS*/
         datos.innerHTML= `
             <tr>
                 <th >Producto: ${skin.campeon}</th>
                 <th >${skin.descripcion}</th>
                 <th >Cantidad: ${skin.cantidad}</th>
                 <th >Valor: ${skin.precio}RP</th>
-                <br>
+                
                 <th ><button id="eliminar${skin.id}" class="btn">Eliminar</button></th>
             </tr>
         `;
