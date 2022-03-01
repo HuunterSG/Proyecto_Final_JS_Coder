@@ -12,6 +12,7 @@ body header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 2rem;
   background: #ff7300;
 }
 body main {
@@ -21,38 +22,48 @@ body main {
   justify-content: space-between;
   align-items: flex-start;
 }
+body .footer {
+  margin-top: 30px;
+  background: #ff7300;
+  padding: 4rem;
+}
+body .footer .footerT {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
 
 aside {
-  width: 50%;
-  background: #ff7300;
+  width: 100%;
   margin-top: 10px;
   margin-right: 5px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px white;
 }
 aside .titleAside {
-  color: black;
-  margin: auto;
+  color: #969696;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 1.5rem;
   text-decoration: underline;
 }
 aside #hola {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 10px;
+  background: #ff7300;
+  border-radius: 10px;
 }
-aside #hola .userT {
+aside #hola .cardH .userT {
   color: #313131;
   margin: 5px;
 }
-aside #hola .userP {
+aside #hola .cardH .userP {
   color: #484848;
   margin-left: 5px;
 }
 
 .tienda {
-  width: 50%;
+  width: 80%;
 }
 .tienda .contbtn {
   width: 100%;
@@ -68,12 +79,13 @@ aside #hola .userP {
   background: #ff7300;
   font-style: italic;
   font-weight: bold;
+  font-size: 1rem;
   margin: 10px 0;
 }
 .tienda #contenedor {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 30px auto;
   justify-content: center;
 }
 .tienda #contenedor .card {
@@ -133,7 +145,28 @@ aside #hola .userP {
   background: rgba(116, 116, 116, 0.712);
   box-shadow: 1px 1px 2px #a5a5a5;
 }
-.tienda .btn {
+.tienda #carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.tienda #carrito .table {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  text-align: center;
+  background: #ff7300;
+  padding: 1rem;
+  border-radius: 25px;
+  width: 80%;
+}
+.tienda #carrito .table .text {
+  font-size: 2rem;
+  color: #252525;
+}
+.tienda #carrito .btn {
   color: #9f31c0;
   background: #4b4b4b;
   box-shadow: 1px 1px 2px #a5a5a5;
@@ -142,28 +175,16 @@ aside #hola .userP {
   padding: 0.4rem;
   cursor: pointer;
 }
-.tienda .table {
-  display: flex;
-  font-size: 1.5rem;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  text-align: center;
-  background: #4e4e4e;
-  padding: 2rem;
-  border-radius: 25px;
-  box-shadow: 4px 4px 5px #ff00dd;
-  width: 100%;
-}
-.tienda .text {
-  padding: 50px 0 25px 700px;
-  font-size: 2rem;
-  color: #838383;
-}
 
 .sesion {
-  width: 50%;
+  width: 20%;
 }
-.sesion #boton1 {
+.sesion .contbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sesion .contbtn #boton1 {
   position: relative;
   text-align: center;
   padding: 1rem 2rem;

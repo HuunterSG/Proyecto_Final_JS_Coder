@@ -11,6 +11,7 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+        margin-bottom: 2rem;
         background: rgb(255, 115, 0);
     }
     main{
@@ -20,6 +21,17 @@ body{
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
+    }
+    .footer{
+        margin-top: 30px;
+        background: rgb(255, 115, 0);
+        padding: 4rem;
+        .footerT{
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
     }
 }
 

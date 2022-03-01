@@ -1,11 +1,12 @@
 .tienda{
-    
-    width: 50%;
+    width: 80%;
+
     .contbtn {
         width: 100%;
         text-align: center;
         #btnTienda{
             width: 80%;
+
             position: relative;
             text-align: center;
             padding: 1rem 2rem;
@@ -14,13 +15,14 @@
             background: rgb(255, 115, 0);
             font-style:italic;
             font-weight: bold;
+            font-size: 1rem;
             margin: 10px 0;
         }
     }
     #contenedor{
         display: flex;
         flex-wrap: wrap;
-        margin: auto;
+        margin: 30px auto;
         justify-content: center;
         .card{
             margin: 25px;
@@ -81,31 +83,37 @@
             }
         }
     }
-    .btn{
-        color: rgb(159, 49, 192);
-        background:rgb(75, 75, 75) ;
-        box-shadow: 1px 1px 2px rgb(165, 165, 165);
-        width: 100%;
-        border-radius: 50px;
-        padding: 0.4rem;
-        cursor: pointer;
-    }
-    .table{
-        display:flex;
-        font-size: 1.5rem;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        text-align: center;
-        background: rgb(78, 78, 78);
-        padding: 2rem;
-        border-radius: 25px;
-        box-shadow: 4px 4px 5px rgb(255, 0, 221);
-        width: 100%;
-    }
-
-    .text{
-        padding:50px 0 25px 700px;
-        font-size: 2rem;
-        color: rgb(131, 131, 131);
+    #carrito{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        .table{
+            display:flex;
+            font-size: 1.5rem;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            text-align: center;
+            background: rgb(255, 115, 0);
+            padding: 1rem;
+            border-radius: 25px;
+            width: 80%;
+            .text{
+                
+                font-size: 2rem;
+                color: rgb(37, 37, 37);
+            }
+        }
+        .btn{
+            color: rgb(159, 49, 192);
+            background:rgb(75, 75, 75);
+            box-shadow: 1px 1px 2px rgb(165, 165, 165);
+            width: 100%;
+            border-radius: 50px;
+            padding: 0.4rem;
+            cursor: pointer;
+        }
+        
     }
 }
