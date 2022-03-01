@@ -23,26 +23,43 @@ body main {
 }
 
 aside {
-  width: 100%;
-  background: red;
+  width: 50%;
+  background: #ff7300;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px white;
 }
 aside .titleAside {
-  color: white;
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
-aside #result {
-  width: 100%;
+aside #hola {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
 }
-aside #result h3 {
-  color: white;
+aside #hola .userT {
+  color: #313131;
+  margin: 5px;
+}
+aside #hola .userP {
+  color: #484848;
+  margin-left: 5px;
 }
 
 .tienda {
   width: 50%;
 }
 .tienda .contbtn {
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 .tienda .contbtn #btnTienda {
+  width: 80%;
   position: relative;
   text-align: center;
   padding: 1rem 2rem;

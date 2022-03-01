@@ -1,15 +1,29 @@
 aside{
-    width: 100%;
-    background: red;
+    width: 50%;
+    background: rgb(255, 115, 0);
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px white;
     .titleAside{
-        color: white;
-
+        color: black;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: underline;
     }
-    #result{
-    width: 100%;
-    h3{
-        color: white;
-    }
+    #hola{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
     
+        .userT{
+        color: rgb(49, 49, 49);
+        margin: 5px;
+        }
+        .userP{
+            color: rgb(72,72,72);
+            margin-left: 5px;
+        }
     }
 }

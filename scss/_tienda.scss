@@ -2,18 +2,19 @@
     
     width: 50%;
     .contbtn {
-        
-        width: 50%;
+        width: 100%;
+        text-align: center;
         #btnTienda{
+            width: 80%;
             position: relative;
-                text-align: center;
-                padding: 1rem 2rem;
-                border-radius: 15px ;
-                font-size: 1rem;
-                background: rgb(255, 115, 0);
-                font-style:italic;
-                font-weight: bold;
-                margin: 10px 0;
+            text-align: center;
+            padding: 1rem 2rem;
+            border-radius: 15px ;
+            font-size: 1rem;
+            background: rgb(255, 115, 0);
+            font-style:italic;
+            font-weight: bold;
+            margin: 10px 0;
         }
     }
     #contenedor{
