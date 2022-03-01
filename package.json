@@ -1,0 +1,11 @@
+{
+  "name": "d13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "author": "Agustin Jose Perez Rodriguez",
+  "license": "ISC"
+}

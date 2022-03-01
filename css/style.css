@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #ff7300;
+}
+body main {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+aside {
+  width: 100%;
+  background: red;
+}
+aside .titleAside {
+  color: white;
+}
+aside #result {
+  width: 100%;
+}
+aside #result h3 {
+  color: white;
+}
+
+.tienda {
+  width: 50%;
+}
+.tienda .contbtn {
+  width: 50%;
+}
+.tienda .contbtn #btnTienda {
+  position: relative;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  background: #ff7300;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.tienda #contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+.tienda #contenedor .card {
+  margin: 25px;
+  background: #ff7300;
+  border-radius: 10px;
+  box-shadow: inset 2px 1px 5px white;
+}
+.tienda #contenedor .card .cardBody {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 350px;
+}
+.tienda #contenedor .card .cardBody .cardImg {
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.tienda #contenedor .card .cardBody .cardImg img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #e0e0e0;
+}
+.tienda #contenedor .card .cardBody .cardImg img:hover {
+  box-shadow: 3px 3px 8px black;
+}
+.tienda #contenedor .card .cardBody .cardText {
+  font-family: "Franklin Gothic Medium";
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.tienda #contenedor .card .cardBody .cardText .cardTitle {
+  font-size: 1.5rem;
+}
+.tienda #contenedor .card .cardBody .cardText .cardSubT {
+  font-size: 1rem;
+}
+.tienda #contenedor .card .cardBody .cardText .cardP {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.tienda #contenedor .card .cardBody .cardContBtn {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.tienda #contenedor .card .cardBody .cardContBtn .btncard {
+  margin: auto;
+  border-radius: 5px;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+  background: rgba(116, 116, 116, 0.712);
+  box-shadow: 1px 1px 2px #a5a5a5;
+}
+.tienda .btn {
+  color: #9f31c0;
+  background: #4b4b4b;
+  box-shadow: 1px 1px 2px #a5a5a5;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.tienda .table {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  text-align: center;
+  background: #4e4e4e;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 4px 4px 5px #ff00dd;
+  width: 100%;
+}
+.tienda .text {
+  padding: 50px 0 25px 700px;
+  font-size: 2rem;
+  color: #838383;
+}
+
+.sesion {
+  width: 50%;
+}
+.sesion #boton1 {
+  position: relative;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  background: #ff7300;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.sesion .formss {
+  border: solid 2px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.sesion .formss #formulario {
+  display: none;
+  background: #ff7300;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+.sesion .formss #formulario input, .sesion .formss #formulario button {
+  padding: 0.3rem;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  margin: auto;
+}
+.sesion .formss #registrarme {
+  display: none;
+  background: #ff7300;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  font-size: 1.3rem;
+}
+.sesion .formss #registrarme #register {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.sesion .formss #registrarme #register input {
+  padding: 0.2rem;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

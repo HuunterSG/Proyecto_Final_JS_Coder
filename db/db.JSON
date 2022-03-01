@@ -1,0 +1,41 @@
+[
+    {
+        "id": "0",
+        "user": "HuunterSG",
+        "password": "HuunterSG123",
+        "edad": "24"
+    },
+    {
+        "id": "1",
+        "user": "Kerps",
+        "password": "Kerps123",
+        "edad": "23"
+    },
+    {
+        "id": "2",
+        "user": "Luciernaga",
+        "password": "123456",
+        "edad": "26"
+    },
+    {
+        "id": "3",
+        "user": "T0HKA",
+        "password": "123456",
+        "edad": "24"
+    },
+    {
+        "id": "4",
+        "user": "TioFedex",
+        "password": "123456",
+        "edad": "28"
+    },
+    {
+        "id": "5",
+        "user": "Catofspace",
+        "password": "123456",
+        "edad": "24"
+    }
+]
+
+
+    

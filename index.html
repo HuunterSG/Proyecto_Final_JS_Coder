@@ -1,29 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda Pre-Entrega</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<header class="encabezado">
-    <h1 class="title">Bienvenido a la Tienda de skins de League of legends</h1>
-</header>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Desafio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>League of Skins</h1>
+      <h2>SUSCRIPCIÓN</h2>
+    </header>
     <main>
-        <div id="contenedor"></div>
-        <div id="carrito"></div>
+      <section class="sesion">
+        <div class="contbtn">
+          <button id="boton1">suscribirse</button>
+        </div>
+        <div class="formss">
+          <form id="formulario">
+            <label> Name: </label>
+            <input class="iText" type="text" name="nombre" id="iNombre" />
+            <label>PassWord: </label>
+            <input class="Itext" type="password" name="IContraseña" id="IContraseña"/>
+            <input type="button" id="btnSubmit" value="Confirmar" />
+            <button id="boton2">register</button>
+            <button id="escape">X</button>
+          </form>
+          
+          <div id="registrarme">
+            <form id="register">
+              
+                <label >Name: </label>
+                <input class="Itext" type="text" name="nombre" id="Inombre"/>
+              
+              
+                <label >Last Name: </label>
+                <input class="Itext" type="text" />
+              
+              
+                <label>Email: </label>
+                <input class="Itext" type="email" name="email" id="IEmail"/>
+              
+              
+                <label>PassWord: </label>
+                <input class="Itext" type="password" />
+              
+              
+                <label>Confirm PassWord: </label>
+                <input class="Itext" type="password" />
+              
+              
+                <label>Date: </label>
+                <input class="Itext" type="text" />
+              
+              <input type="button" id="escape2" value="\(°=°)/">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="tienda">
+        <div class="contbtn">
+          <button id="btnTienda">Tienda</button>
+        </div>
+        <div id="contenedor" ></div>
+        <div id="carrito" ></div>
+      </section>
+      <aside>
+        <h3 class="titleAside">Usuarios conectados</h3>
+        <div id="#hola"></div>
+      </aside>
     </main>
-    
     <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      
     ></script>
-    <script src="./tiendaskins.js"></script>
-    <footer class="footer">
-        <h2 class="footer_text">Autor: Agustin Jose Perez Rodriguez</h2>
-    </footer>
-</body>
+    <script src="./js/sesion.js"></script>
+    <script src="./js/tiendaskins.js"></script>
+    <script src="./js/users.js"></script>
+  </body>
 </html>
