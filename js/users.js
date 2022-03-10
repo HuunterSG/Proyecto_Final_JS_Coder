@@ -1,5 +1,5 @@
 $(function(){
-    $.get("../db/db.JSON", function(data){
+    $.get("./db/db.JSON", function(data){
         for(const dato of data){
             $('#hola').append(`     <div class="cardH">
                                     <h3 class="userT">Usuario N°${dato.id}</h3>
