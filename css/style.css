@@ -15,6 +15,10 @@ body header {
   margin-bottom: 2rem;
   background: #ff7300;
 }
+body header #carri {
+  cursor: pointer;
+  width: 50px;
+}
 body main {
   width: 100%;
   display: flex;
@@ -82,58 +86,61 @@ aside #hola .cardH .userP {
   font-size: 1rem;
   margin: 10px 0;
 }
-.tienda #contenedor {
+.tienda .conttienda {
+  display: none;
+}
+.tienda .conttienda #contenedor {
   display: flex;
   flex-wrap: wrap;
   margin: 30px auto;
   justify-content: center;
 }
-.tienda #contenedor .card {
+.tienda .conttienda #contenedor .card {
   margin: 25px;
   background: #ff7300;
   border-radius: 10px;
   box-shadow: inset 2px 1px 5px white;
 }
-.tienda #contenedor .card .cardBody {
+.tienda .conttienda #contenedor .card .cardBody {
   display: flex;
   flex-direction: column;
   width: 200px;
   height: 350px;
 }
-.tienda #contenedor .card .cardBody .cardImg {
+.tienda .conttienda #contenedor .card .cardBody .cardImg {
   margin: 10px auto;
   border-radius: 10px;
 }
-.tienda #contenedor .card .cardBody .cardImg img {
+.tienda .conttienda #contenedor .card .cardBody .cardImg img {
   border-radius: 5px;
   box-shadow: 3px 3px 5px #e0e0e0;
 }
-.tienda #contenedor .card .cardBody .cardImg img:hover {
+.tienda .conttienda #contenedor .card .cardBody .cardImg img:hover {
   box-shadow: 3px 3px 8px black;
 }
-.tienda #contenedor .card .cardBody .cardText {
+.tienda .conttienda #contenedor .card .cardBody .cardText {
   font-family: "Franklin Gothic Medium";
   font-weight: 100;
   text-align: center;
   padding-bottom: 1rem;
   width: 100%;
 }
-.tienda #contenedor .card .cardBody .cardText .cardTitle {
+.tienda .conttienda #contenedor .card .cardBody .cardText .cardTitle {
   font-size: 1.5rem;
 }
-.tienda #contenedor .card .cardBody .cardText .cardSubT {
+.tienda .conttienda #contenedor .card .cardBody .cardText .cardSubT {
   font-size: 1rem;
 }
-.tienda #contenedor .card .cardBody .cardText .cardP {
+.tienda .conttienda #contenedor .card .cardBody .cardText .cardP {
   margin-top: 10px;
   font-size: 1.2rem;
 }
-.tienda #contenedor .card .cardBody .cardContBtn {
+.tienda .conttienda #contenedor .card .cardBody .cardContBtn {
   width: 100%;
   margin: auto;
   text-align: center;
 }
-.tienda #contenedor .card .cardBody .cardContBtn .btncard {
+.tienda .conttienda #contenedor .card .cardBody .cardContBtn .btncard {
   margin: auto;
   border-radius: 5px;
   width: 80%;
@@ -145,13 +152,16 @@ aside #hola .cardH .userP {
   background: rgba(116, 116, 116, 0.712);
   box-shadow: 1px 1px 2px #a5a5a5;
 }
-.tienda #carrito {
+.tienda .contcarrito {
+  display: none;
+}
+.tienda .contcarrito #carrito {
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
 }
-.tienda #carrito .table {
+.tienda .contcarrito #carrito .table {
   display: flex;
   font-size: 1.5rem;
   flex-direction: column-reverse;
@@ -162,11 +172,11 @@ aside #hola .cardH .userP {
   border-radius: 25px;
   width: 80%;
 }
-.tienda #carrito .table .text {
+.tienda .contcarrito #carrito .table .text {
   font-size: 2rem;
   color: #252525;
 }
-.tienda #carrito .btn {
+.tienda .contcarrito #carrito .btn {
   color: #9f31c0;
   background: #4b4b4b;
   box-shadow: 1px 1px 2px #a5a5a5;
@@ -233,6 +243,45 @@ aside #hola .cardH .userP {
   color: white;
   background: black;
   margin: 10px;
+}
+
+#modalBtn {
+  background: orange;
+}
+
+#modal {
+  display: none;
+  background: gray;
+  width: 70%;
+}
+#modal .modal-header {
+  background-color: orange;
+}
+#modal .modal-header .modal-title {
+  color: white;
+}
+#modal .modal-header #closeBtn {
+  color: white;
+}
+#modal .modal-header #closeBtn:hover {
+  color: violet;
+}
+#modal .modal-body {
+  background: blue;
+  width: 80%;
+}
+#modal .modal-body .modal-subtitle {
+  color: white;
+}
+#modal .modal-body .modal-text {
+  color: yellow;
+}
+#modal .modal-footer {
+  background-color: orange;
+}
+#modal .modal-footer .modal-title {
+  color: steelblue;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+#modalBtn{
+    background:orange;  
+}
+#modal{
+    display: none;
+    background: gray;
+    width: 70%;
+    .modal-header{
+        background-color: orange;
+        .modal-title{
+            color: white;
+        }
+        #closeBtn{
+            color: white;
+            &:hover{
+                color:violet;
+            }
+        }
+    }
+    .modal-body{
+        background: blue;
+        width: 80%;
+        .modal-subtitle{
+            color: white;
+        }
+        .modal-text{
+            color: yellow;
+        }
+    }
+    .modal-footer{
+        background-color: orange;
+        .modal-title{
+            color: steelblue;
+            text-align: center;
+        }
+    }
+
+}

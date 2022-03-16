@@ -18,4 +18,16 @@ $(document).ready(function () {
       console.log("hola");
     });
   });
+  $("#btnTienda").click(function () {
+    $(".conttienda").toggle();
+
+  })
+  $("#carri").click(function () { 
+    
+    $(".contcarrito").toggle();
+  });
+
+  $("#modalBtn").click(function(){
+    $("#modal").toggle(2000)
+  })
 });
