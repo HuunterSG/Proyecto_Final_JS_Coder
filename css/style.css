@@ -15,9 +15,31 @@ body header {
   margin-bottom: 2rem;
   background: #ff7300;
 }
-body header #carri {
-  cursor: pointer;
-  width: 50px;
+body header a {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 25px;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: gray;
+  box-shadow: 2px 2px 5px black;
+}
+body header .contbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body header .contbtn #boton1 {
+  position: relative;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  background: #ff7300;
+  font-style: italic;
+  font-weight: bold;
+  margin: 10px 0;
 }
 body main {
   width: 100%;
@@ -25,6 +47,45 @@ body main {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-start;
+}
+body main #contEmergente {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.733);
+  width: 100%;
+  height: 100vh;
+}
+body main #contEmergente .emergente {
+  position: relative;
+  background-color: black;
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 4px 4px 15px #ff49f0, -2px -2px 15px #ffae00;
+}
+body main #contEmergente .emergente .textEmer {
+  color: gray;
+  text-align: center;
+  margin: 5px;
+  font-size: 3rem;
+}
+body main #contEmergente .emergente #closeEmer {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: gray;
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
 }
 body .footer {
   margin-top: 30px;
@@ -39,7 +100,7 @@ body .footer .footerT {
 }
 
 aside {
-  width: 100%;
+  width: 20%;
   margin-top: 10px;
   margin-right: 5px;
 }
@@ -74,6 +135,7 @@ aside #hola .cardH .userP {
   text-align: center;
 }
 .tienda .contbtn #btnTienda {
+  cursor: pointer;
   width: 80%;
   position: relative;
   text-align: center;
@@ -88,6 +150,21 @@ aside #hola .cardH .userP {
 }
 .tienda .conttienda {
   display: none;
+}
+.tienda .conttienda .contModalBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px auto;
+}
+.tienda .conttienda .contModalBtn #modalBtn {
+  border-radius: 10px;
+  background: #a1a1a1;
+  padding: 10px;
+  border: hidden;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #ff49f0, -3px -3px 10px #ff49f0;
 }
 .tienda .conttienda #contenedor {
   display: flex;
@@ -152,92 +229,76 @@ aside #hola .cardH .userP {
   background: rgba(116, 116, 116, 0.712);
   box-shadow: 1px 1px 2px #a5a5a5;
 }
-.tienda .contcarrito {
-  display: none;
-}
-.tienda .contcarrito #carrito {
+
+.main_SN {
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  align-items: center;
-}
-.tienda .contcarrito #carrito .table {
-  display: flex;
-  font-size: 1.5rem;
-  flex-direction: column-reverse;
   justify-content: space-around;
-  text-align: center;
-  background: #ff7300;
-  padding: 1rem;
+  align-items: start;
+}
+.main_SN .nosotros {
+  box-shadow: 2px 2px 15px #ffae00, -2px -2px 15px #ffae00;
   border-radius: 25px;
+  width: 90%;
+  margin: 40px;
+  padding: 10px;
+}
+.main_SN .nosotrosTitle {
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+}
+.main_SN .nosotrosText {
   width: 80%;
+  margin: auto;
+  color: white;
 }
-.tienda .contcarrito #carrito .table .text {
-  font-size: 2rem;
-  color: #252525;
+.main_SN .nosotrosUbi {
+  width: 90%;
+  margin: auto;
 }
-.tienda .contcarrito #carrito .btn {
-  color: #9f31c0;
-  background: #4b4b4b;
-  box-shadow: 1px 1px 2px #a5a5a5;
-  width: 100%;
-  border-radius: 50px;
-  padding: 0.4rem;
-  cursor: pointer;
+.main_SN .nosotrosUbi li {
+  color: white;
+  font-size: 1.1rem;
 }
-
-.sesion {
+.main_SN .sesion {
   width: 20%;
 }
-.sesion .contbtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.sesion .contbtn #boton1 {
-  position: relative;
-  text-align: center;
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  font-size: 1rem;
-  background: #ff7300;
-  font-style: italic;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.sesion .formss {
+.main_SN .sesion .formss {
   border: solid 2px black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
-.sesion .formss #formulario {
+.main_SN .sesion .formss #formulario {
   display: none;
   background: #ff7300;
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: 10px 10px 0 0;
 }
-.sesion .formss #formulario input, .sesion .formss #formulario button {
+.main_SN .sesion .formss #formulario input, .main_SN .sesion .formss #formulario button {
   padding: 0.3rem;
   border-radius: 5px;
   color: white;
   background: black;
   margin: auto;
 }
-.sesion .formss #registrarme {
+.main_SN .sesion .formss #registrarme {
   display: none;
   background: #ff7300;
   padding: 1rem;
   border-radius: 0 0 10px 10px;
   font-size: 1.3rem;
 }
-.sesion .formss #registrarme #register {
+.main_SN .sesion .formss #registrarme #register {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-.sesion .formss #registrarme #register input {
+.main_SN .sesion .formss #registrarme #register input {
   padding: 0.2rem;
   border-radius: 5px;
   color: white;
@@ -245,43 +306,101 @@ aside #hola .cardH .userP {
   margin: 10px;
 }
 
-#modalBtn {
-  background: orange;
-}
-
 #modal {
   display: none;
-  background: gray;
+  box-shadow: 2px 2px 5px orange, -2px -2px 5px orange;
   width: 70%;
+  border-radius: 10px;
 }
 #modal .modal-header {
   background-color: orange;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #modal .modal-header .modal-title {
   color: white;
+  font-size: 1rem;
 }
 #modal .modal-header #closeBtn {
-  color: white;
+  color: #272727;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 #modal .modal-header #closeBtn:hover {
-  color: violet;
+  color: black;
 }
 #modal .modal-body {
-  background: blue;
-  width: 80%;
+  width: 100%;
+  margin: auto;
 }
 #modal .modal-body .modal-subtitle {
   color: white;
 }
-#modal .modal-body .modal-text {
-  color: yellow;
+#modal .modal-body .contcarrito {
+  margin: auto;
+}
+#modal .modal-body .contcarrito #carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#modal .modal-body .contcarrito #carrito .table {
+  display: flex;
+  font-size: 0.8rem;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0.4rem;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+}
+#modal .modal-body .contcarrito #carrito .table .text {
+  font-size: 0.8rem;
+  color: #252525;
+}
+#modal .modal-body .contcarrito #carrito tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffae00;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px black;
+}
+#modal .modal-body .contcarrito #carrito tr th {
+  margin: 4px;
+}
+#modal .modal-body .contcarrito #carrito tr .btn {
+  font-size: 0.7rem;
+  color: black;
+  background: #a0a0a0;
+  box-shadow: 1px 1px 2px #a5a5a5;
+  width: 100%;
+  border-radius: 50px;
+  padding: 0.2rem;
+  cursor: pointer;
 }
 #modal .modal-footer {
   background-color: orange;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
 }
-#modal .modal-footer .modal-title {
-  color: steelblue;
-  text-align: center;
+#modal .modal-footer #botonFinalizar {
+  background: steelblue;
+  margin: auto;
+  border: hidden;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

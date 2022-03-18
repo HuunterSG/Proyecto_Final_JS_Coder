@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Desafio</title>
+    <title>League of Skins</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -13,55 +13,36 @@
     <header>
       <h1>League of Skins</h1>
       <div id="login"></div>
-      <img src="./img/carro.png" alt="carrito" id="carri">
+      <a href="./pages/sobrenosotros.html">Sobre nosotros</a>
     </header>
     <main>
-      <section class="sesion">
-        <div class="contbtn">
-          <button id="boton1">suscribirse</button>
-        </div>
-        <div class="formss">
-          <form id="formulario">
-            <label> Name: </label>
-            <input class="iText" type="text" name="nombre" id="iNombre" />
-            <label>PassWord: </label>
-            <input class="Itext" type="password" name="IContraseña" id="IContraseña"/>
-            <input type="button" id="btnSubmit" value="Confirmar" />
-            <button id="boton2">register</button>
-            <button id="escape">X</button>
-          </form>
-          
-          <div id="registrarme">
-            <form id="register">
+        
+          <div id="contEmergente">
+            <div class="emergente">
+              <h3 class="textEmer">Gracias por su compra</h3>
+              <span id="closeEmer">\(o.o)/</span>
+            </div>
+          </div>
+        
+        <aside>
+          <div id="modal">
+            <div class="modal-header">
+              <h3 class="modal-title">Skins en carrito</h3>
+              <span id="closeBtn">&times;</span>
+            </div>
+            <div class="modal-body">
               
-                <label >Name: </label>
-                <input class="Itext" type="text" name="nombre" id="Inombre"/>
+              <div class="contcarrito">
+                <div id="carrito" ></div>
+              </div>
               
+            </div>
+            <div class="modal-footer">
               
-                <label >Last Name: </label>
-                <input class="Itext" type="text" />
-              
-              
-                <label>Email: </label>
-                <input class="Itext" type="email" name="email" id="IEmail"/>
-              
-              
-                <label>PassWord: </label>
-                <input class="Itext" type="password" />
-              
-              
-                <label>Confirm PassWord: </label>
-                <input class="Itext" type="password" />
-              
-              
-                <label>Date: </label>
-                <input class="Itext" type="text" />
-              
-              <input type="button" id="escape2" value="\(°=°)/">
-            </form>
+              <button id="botonFinalizar">finalizar compra</button>
+            </div>
           </div>
         </div>
-        <aside>
           <h3 class="titleAside">Usuarios conectados</h3>
           <div id="hola"></div>
         </aside>
@@ -71,26 +52,12 @@
           <button id="btnTienda">Tienda</button>
         </div>
         <div class="conttienda">
+          <div class="contModalBtn">
+            <button id="modalBtn">Carrito</button>
+
+          </div>
           <div id="contenedor" ></div>
           
-          <button id="modalBtn">finalizar compra</button>
-          <div id="modal">
-              <div class="modal-header">
-                <h3 class="modal-title">Que onda perro</h3>
-                <span id="closeBtn">&times;</span>
-              </div>
-              <div class="modal-body">
-                <p class="modal-subtitle"> que ondi</p>
-                <p class="modal-text"> soy muy fachero</p>
-              </div>
-              <div class="modal-footer">
-                <h3 class="modal-title"> gracias por venir</h3>
-              </div>
-          </div>
-        </div>
-        <div class="contcarrito">
-          <div id="carrito" ></div>
-        </div>
       </section>
       
     </main>
