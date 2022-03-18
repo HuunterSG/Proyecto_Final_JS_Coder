@@ -49,7 +49,7 @@ body main {
   align-items: flex-start;
 }
 body main #contEmergente {
-  visibility: hidden;
+  visibility: collapse;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,7 +403,7 @@ aside #hola .cardH .userP {
   display: flex;
   justify-content: center;
 }
-#modal .modal-footer #botonFinalizar {
+#modal .modal-footer #btnFinalizar {
   background: steelblue;
   margin: auto;
   border: hidden;

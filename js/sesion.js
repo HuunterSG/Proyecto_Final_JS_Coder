@@ -30,15 +30,20 @@ $(document).ready(function () {
   $("#modalBtn").click(function(e){
     e.preventDefault();
     $("#modal").slideDown(2000)
-      $("#botonFinalizar").click(function(e){
-        e.preventDefault()
-        $("#contEmergente").show();
-      })
+      
       $("#closeBtn").click(function(){
         $("#modal").slideUp(1500)
       })
-    });
+  });
 
+  $("#btnFinalizar").click(function(){
+    console.log("Funciona")
+    $("#contEmergente").css("visibility", "visible");
+      $("#closeEmer").click(function(e){
+        e.preventDefault()
+        $("#contEmergente").css("visibility", "hidden");
+      })
+  })  
 
 });
 
