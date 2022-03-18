@@ -255,13 +255,23 @@ aside #hola .cardH .userP {
   margin: auto;
   color: white;
 }
-.main_SN .nosotrosUbi {
-  width: 90%;
+.main_SN .nosotros .contUbi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+}
+.main_SN .nosotros .contUbi .nosotrosUbi {
+  width: 40%;
   margin: auto;
 }
-.main_SN .nosotrosUbi li {
+.main_SN .nosotros .contUbi .nosotrosUbi li {
   color: white;
   font-size: 1.1rem;
+}
+.main_SN .nosotros .contUbi img {
+  width: 50%;
 }
 .main_SN .sesion {
   width: 20%;

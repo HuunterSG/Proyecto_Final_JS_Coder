@@ -22,12 +22,24 @@
             color: white;
             
         }
-        &Ubi{
-            width: 90%;
-            margin:auto;
-            li{
-                color: white;
-                font-size: 1.1rem;
+        .contUbi{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+            
+            .nosotrosUbi{
+                
+                width: 40%;
+                margin:auto;
+                li{
+                    color: white;
+                    font-size: 1.1rem;
+                }
+            }
+            img{
+                width: 50%;
             }
         }
     }
